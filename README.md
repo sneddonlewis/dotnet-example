@@ -14,4 +14,4 @@ Build and run Dev image
 
 docker build -f dev.dockerfile -t lsneddon/aspnetsite-dev:1.0 .
 
-docker run -p 8080:7090 -v $pwd:/app lsneddon/aspnetsite-dev:1.0
+docker run -p 8080:7090 -v $(pwd):/app lsneddon/aspnetsite-dev:1.0
